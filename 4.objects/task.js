@@ -1,3 +1,5 @@
+'Use strict';
+
 function Student(name, gender, age) {
 	this.name = name;
 	this.gender = gender;
@@ -51,5 +53,5 @@ newStudent3.addMarks(3, 4, 5);
 console.log(newStudent3.getAverage());
 console.log(newStudent3);
 
-newStudent3.exclude('невыполнение требований');
+newStudent3.exclude('Невыполнение требований');
 console.log(newStudent3);
