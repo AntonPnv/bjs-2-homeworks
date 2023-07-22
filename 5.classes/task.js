@@ -12,9 +12,6 @@ class PrintEditionItem {
 
 	fix() {
 		this.state = this.state * 1.5;
-		if (this.state > 100) {
-			this.state = 100;
-		}
 	}
 
 	set state(value) {
@@ -184,7 +181,7 @@ class Student {
 	getAverage() {
 		const subjects = Object.keys(this.marks);
 		const totalSum = subjects.reduce((total, subject) => total + this.getAverageBySubject(subject), 0);
-		return totalSum / subjects.length;
+		return totalSum / subjects.length || 0;
 	}
 }
 
