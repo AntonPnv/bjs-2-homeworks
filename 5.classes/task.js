@@ -149,6 +149,7 @@ console.log("Количество книг до выдачи: " + library.books.
 library.giveBookByName("Машина времени");
 console.log("Количество книг после выдачи: " + library.books.length); //Количество книг после выдачи: 3
 
+
 // Задача № 3 **
 
 class Student {
@@ -191,8 +192,8 @@ student.addMark(5, "химия");
 student.addMark(5, "химия");
 student.addMark(5, "физика");
 student.addMark(4, "физика");
-student.addMark(6, "физика"); // Оценка не добавится, так как больше 5
+student.addMark(6, "физика");
 
-console.log("Средний балл по предмету физика:", student.getAverageBySubject("физика")); // Средний балл по предмету физика 4.5
-console.log("Средний балл по предмету биология:", student.getAverageBySubject("биология")); // Вернёт 0, так как по такому предмету нет никаких оценок.
-console.log("Средний балл по всем предметам:", student.getAverage()); // Средний балл по всем предметам 4.75
+console.log("Средний балл по предмету физика:", student.getAverageBySubject("физика"));
+console.log("Средний балл по предмету биология:", student.getAverageBySubject("биология"));
+console.log("Средний балл по всем предметам:", student.getAverage());
